@@ -1,0 +1,35 @@
+:root{
+  --royal-blue: #162a7c; /* deep royal blue */
+  --royal-blue-2: #2340b2;
+  --ruby-red: #a4162a;
+  --ruby-red-2: #e11d2a;
+  --muted: #f6f7fb;
+  --card-bg: #ffffff;
+  --glass: rgba(255,255,255,0.06);
+}
+
+*{box-sizing:border-box;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--royal-blue) 0%, #0d1a55 100%);color:#fff;}
+.topbar{padding:28px 24px;text-align:center;background:linear-gradient(90deg,var(--royal-blue-2), var(--royal-blue));box-shadow:0 6px 20px rgba(0,0,0,0.35);}
+.topbar h1{margin:0;font-size:32px;letter-spacing:0.6px;}
+.topbar .subtitle{margin:6px 0 0;opacity:0.9;font-size:14px;}
+
+.container{max-width:980px;margin:28px auto;padding:20px;}
+
+.upload-card{background:rgba(255,255,255,0.04);padding:20px;border-radius:14px;display:flex;gap:18px;flex-direction:column;box-shadow:0 8px 30px rgba(2,6,23,0.6);}
+.dropzone{display:flex;align-items:center;justify-content:center;flex-direction:column;border:2px dashed rgba(255,255,255,0.12);padding:36px;border-radius:12px;cursor:pointer;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);}
+.dropzone input{display:none;}
+.dropzone strong{font-size:18px;color:var(--muted);display:block;margin-bottom:6px;}
+.dropzone p{margin:0;font-size:13px;color:rgba(255,255,255,0.65);}
+
+.controls{display:flex;gap:12px;align-items:center;}
+.btn{padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:600;}
+.btn.primary{background:linear-gradient(90deg,var(--royal-blue-2), var(--royal-blue));color:white;box-shadow:0 6px 18px rgba(35,64,178,0.28);}
+.btn.secondary{background:transparent;border:2px solid rgba(255,255,255,0.12);color:white;}
+
+.status{margin-left:8px;font-size:14px;color:rgba(255,255,255,0.9);}
+
+.preview-card{margin-top:18px;background:rgba(255,255,255,0.03);padding:16px;border-radius:12px;}
+.preview-card h2{margin:0 0 10px 0;}
+#resultVideo{width:100%;max-height:520px;border-radius:8px;background:#000;}
+.footer{margin-top:18px;text-align:center;opacity:0.9;color:rgba(255,255,255,0.8);}

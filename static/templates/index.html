@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RoyalCartoon — Video → Cartoon</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>RoyalCartoon</h1>
+    <p class="subtitle">Turn your videos into stylized 2D cartoon footage</p>
+  </header>
+
+  <main class="container">
+    <section class="upload-card">
+      <label class="dropzone" id="dropzone">
+        <input type="file" id="videoInput" accept="video/*" />
+        <div>
+          <strong>Drop a video here</strong>
+          <p>or click to select (Max ~600MB)</p>
+        </div>
+      </label>
+
+      <div class="controls">
+        <button id="uploadBtn" class="btn primary">Upload & Convert</button>
+        <div id="status" class="status"></div>
+      </div>
+    </section>
+
+    <section class="preview-card" id="previewCard" hidden>
+      <h2>Result</h2>
+      <video id="resultVideo" controls></video>
+      <a id="downloadLink" class="btn secondary" download>Download</a>
+    </section>
+
+    <footer class="footer">
+      <small>Made with ♡ — Royal Blue & Ruby Red theme</small>
+    </footer>
+  </main>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
